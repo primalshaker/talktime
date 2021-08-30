@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<ListPreference
+	    android:key="pref_billDay"
+	    android:title="@string/pref_billDay"
+	    android:entries="@array/pref_billDay_entries"
+		android:entryValues="@array/pref_billDay_values"
+		android:defaultValue="@string/pref_billDay_default" />
+	<EditTextPreference 
+	    android:title="@string/pref_planMinutes"
+	    android:key="pref_planMinutes"
+	    android:summary="@string/pref_planMinutes_summary"
+	    android:dialogTitle="@string/pref_planMinutes_dialog"
+	    android:defaultValue="400" />
+	<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_showDetails"
+            android:summary="@string/pref_showDetails_summary"
+            android:title="@string/pref_showDetails" >
+        </CheckBoxPreference>
+</PreferenceScreen>

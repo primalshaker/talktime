@@ -1,0 +1,21 @@
+package com.twd.talktime;
+
+import com.twd.talktime.R;
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+
+
+public class SettingsActivity extends PreferenceActivity {
+
+	@SuppressWarnings("deprecation")
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		// someday replace it with PreferenceFragment
+		addPreferencesFromResource(R.xml.preferences);
+	}
+
+
+	
+
+}
